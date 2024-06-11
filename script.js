@@ -5,11 +5,25 @@ const caixaResultado = document.querySelector(".caixa-resultado")
 const textoResultado = document.querySelector(".texto-resultado")
 
 const perguntas = 
-{//primeiro objeto da lista de perguntas
-   enunciado: "pergunta1", 
-   alternativas: ["alternativa1","alternativa2"] 
+{
+   enunciado: "Qual a melhor maneira de se combater o desmatamento?", 
+   alternativas: [
+      "reflorestamento de áreas"
+      "Implementação de leis rigorosas para a proteção das florestas"
+   ]
 },
-{//segundo objeto da lista de perguntas
-   enunciado: "pergunta2", 
-   alternativas: ["alternativa1","alternativa2"] 
-}
+{
+   enunciado: "Como podemos combater a desigualdade social de forma eficaz e sustentável?", 
+   alternativas: [
+      "Implementar programas e educação e formação profissional acesíveis a todos",
+      "Politicas de resdistribuição de renda e oportunidades"
+      ]
+    },
+   ]:
+
+   let atual = 0 
+   let perguntaAtual;
+
+   function mostraPergunta(){//criando a função para mstrar a pergunta
+      perguntaAtual = pergunta[atual];//guardando a lista de perguntas dentro da variavel perguntaAtual
+      caixaPerguntas.textContent = perguntaAtual.enunciado
