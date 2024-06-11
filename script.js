@@ -19,11 +19,12 @@ const perguntas = [
       "Politicas de resdistribuição de renda e oportunidades"
       ]
     },
-   ]:
+   ];
 
    let atual = 0 
    let perguntaAtual;
 
-   function mostraPergunta(){//criando a função para mostrar a pergunta
-      perguntaAtual = pergunta[atual];//guardando a lista de perguntas dentro da variavel perguntaAtual
-      caixaPerguntas.textContent = perguntaAtual.enunciado
+   function mostraPergunta(){
+     perguntaAtual = pergunta[atual]
+     
+   
